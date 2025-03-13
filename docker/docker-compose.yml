@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13.20
+    environment:
+      - POSTGRES_USER=chirp_user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=chirp_db
+    ports:
+      - "5433:5432"
